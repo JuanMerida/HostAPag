@@ -1,0 +1,135 @@
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Titulo */
+*{  
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h2{
+    font-size: 20px;
+}
+.titulo{
+    text-align: center;
+    margin: 0;
+    font-size: 100px;
+    font-family: lato;
+    animation: 0.3s glitch infinite;
+}
+@keyframes glitch {
+    0%{
+        text-shadow: red 
+        -4px 0px,
+        cyan 4px 0px;
+    }
+    50%{
+        text-shadow: #ff0000 
+        4px 0px,
+        cyan -4px 0px;
+    }
+    100%{
+        text-shadow: red 
+        -4px 0px,
+        cyan 4px 0px;
+    }
+}
+
+
+.modT.spacio{
+    display: block;
+}
+#mod1, #mod2,#mod3,#mod3,#mod4,#mod5, #mod6,#mod7,#mod8{
+    text-align: left;
+    border-style: solid;
+    border-color: purple; 
+    margin: 10px;
+    background-color: rgba(0, 0, 255, 0.3);
+    height: 400px;
+    width: 600px;
+    display: table-cell;
+   
+}
+#mod10,#mod9{
+    text-align: left;
+    border-style: solid;
+    border-color: purple; 
+    margin: 10px;
+    background-color: rgba(0, 0, 255, 0.3);
+    width: 1900px;
+    display: table-cell;
+}
+
+@media (max-width:800px){
+    .modT{
+        width: 80%; 
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #mod1{
+        text-align: left;
+        border-style: solid;
+        border-color: purple; 
+        margin: 10px;
+        background-color: rgba(0, 0, 255, 0.3);
+        height: 400px;
+        width: 400px;
+    }
+    #mod2{
+        text-align: left;
+        border-style: solid;
+        border-color: purple; 
+        margin: 10px;
+        background-color: rgba(0, 0, 255, 0.3);
+        height: 550px;
+        width: 400px;
+    }
+
+    #mod3{
+        text-align: left;
+        border-style: solid;
+        border-color: purple; 
+        margin: 10px;
+        background-color: rgba(0, 0, 255, 0.3);
+        height: 550px;
+        width: 400px;
+    }
+  #mod5, #mod6,#mod7,#mod8{
+        text-align: left;
+        border-style: solid;
+        border-color: purple; 
+        margin: 10px;
+        background-color: rgba(0, 0, 255, 0.3);
+        height: 850px;
+        width: 300px;
+       
+       
+    }
+    #mod4{
+        text-align: left;
+        border-style: solid;
+        border-color: purple; 
+        margin: 10px;
+        background-color: rgba(0, 0, 255, 0.3);
+        height: 650px;
+        width: 400px;
+    }
+    #mod10,#mod9{
+        text-align: left;
+        border-style: solid;
+        border-color: purple; 
+        margin: 10px;
+        background-color: rgba(0, 0, 255, 0.3);
+        width: 400px;
+    
+        
+    }
+    
+}

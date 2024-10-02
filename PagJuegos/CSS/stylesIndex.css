@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+body{
+    margin: 0;
+}
+/* Titulos */
+h1{
+    display: inline;
+    position: relative;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+h1::after,h1::before{
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    top: 0.6em;
+    transition: all 0.2s ease-in;
+}
+h2{
+    height: 50px;
+    font-size: 50px;
+}
+header{ 
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.4;
+    position: sticky;
+    z-index: 1000;
+    top: 0;left: 0;
+}
+label{
+    background-color: black;
+    position:sticky;
+    z-index: 1000;
+}
+#btn-menu{
+    display: none; 
+}
+header label{
+    display: none;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+header label :hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    
+}
+.menu li {
+    flex-grow: 1;
+    border-right: 1px solid black;
+}
+.menu li :hover{
+    cursor: pointer;
+    color: red ;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none; 
+}
+
+/* botones */
+.bottons{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+:root{
+    --color: #17a2ff;
+}
+
+.bottons{
+    display: flex;
+    height: 15vh;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+.btn{
+    overflow: hidden;
+    border: 3px solid #E74C3C;
+    z-index: 1;
+}
+
+.btn::before{
+    content: "";
+   position: absolute;
+    width: 100%;
+    height: 200%;
+    left: 0;
+    top: -200%;
+    background-color: #E74C3C;
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.btn:hover::before{
+    top: 0;
+    border-radius: 0%;
+}
+
+
+
+.game-container {
+    display: block;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.game-item {
+    list-style: none;
+    padding: 3px;
+    width: 900px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+}
+
+
+.game-item img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+/* Media Query para dispositivos móviles */
+@media  (max-width: 800px) {
+   
+    header{
+        background-color: transparent;
+     
+    }
+    .header label {
+        display: block;
+        background: white;
+        width: 100%;
+    }
+    .header img{
+        border-right: 1px solid black;
+    }
+    .menu{
+        position:absolute;
+        background-color: white;
+        width: 20%;
+        margin-left: -20%;
+        transition: all 0.7s;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid black;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+ .game-container {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+.game-item {
+    width: 100%;
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+.game-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+        .bottons{
+         justify-content: left;
+            max-width: 100% ;
+        }
+        .btn{
+            padding: 10px 160px;
+           border: 3px solid #E74C3C;
+        }
+        
+       
+}
